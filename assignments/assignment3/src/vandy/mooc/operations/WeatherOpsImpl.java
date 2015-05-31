@@ -236,6 +236,11 @@ public class WeatherOpsImpl implements WeatherOps {
 	public void onConfigurationChange(MainActivity activity) {
 		Log.d(TAG, "onConfigurationChange() called");
 
+		if (mProgress != null) {
+			mProgress.dismiss();
+			mProgress = null;
+		}
+
 		// Reset the mActivity WeakReference.
 		mActivity = new WeakReference<>(activity);
 
