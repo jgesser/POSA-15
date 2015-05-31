@@ -8,7 +8,7 @@ import android.os.Messenger;
 /**
  * Super class that defines common keys and methods used by the RequestMessage and ReplyMessage subclasses.
  */
-public class RequestReplyMessageBase {
+class RequestReplyMessageBase {
 	/**
 	 * String constant used to extract the pathname to a downloaded image from a Bundle.
 	 */
